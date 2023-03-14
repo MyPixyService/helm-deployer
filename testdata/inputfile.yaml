@@ -1,0 +1,8 @@
+- releaseName: traefik
+  chart: traefik
+  repoURL: https://traefik.github.io/charts
+  namespace: kube-system
+  values:
+    service:
+      annotations:
+        load-balancer.hetzner.cloud/name: cluster-lb

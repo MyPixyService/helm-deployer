@@ -64,7 +64,7 @@ func DeployReleases(inputFile string, kubeconfig string, releaseFilter string)  
 			cmd = fmt.Sprintf("%s --kubeconfig=%s", cmd, kubeconfig)
 		}
 		if release.Namespace != "" {
-			cmd = fmt.Sprintf("%s --namespace=%s", cmd, release.Namespace)
+			cmd = fmt.Sprintf("%s --create-namespace --namespace=%s", cmd, release.Namespace)
 		}
 		if release.Version != "" {
 			cmd = fmt.Sprintf("%s --version=%s", cmd, release.Version)

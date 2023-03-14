@@ -6,11 +6,23 @@ Helm Deployer is a command-line tool written in Go that reads a YAML file contai
 
 ## Installation
 
-To install Helm Deployer, you will need Go 1.16 or later installed on your system. Once you have Go installed, you can run the following command to install the tool:
+To install `helm-deployer`, follow these steps:
 
+1. Download the installation script using `wget`:
 ```bash
-go get github.com/MyPixyService/helm-deployer
+wget -qO- https://raw.githubusercontent.com/MyPixyService/helm-deployer/main/scripts/install.sh | bash
 ```
+
+This script will download the `helm-deployer` binary and install it in your system. Note that running a script directly from a URL can be a security risk. Be sure to verify the source of the script before running it. You can inspect the contents of the script by opening it in a text editor.
+
+2. Once the installation script has completed, you should be able to use the `helm-deployer` command from your terminal:
+```bash
+helm-deployer -h
+```
+This should display the help text for the `helm-deployer` command.
+
+> **Note**:
+> Please note that the installation script is provided "as is" and may not work for all environments. Be sure to review and understand the contents of the script before running it on your system. We cannot be responsible for any damage caused by the installation script.
 
 ## Usage
 

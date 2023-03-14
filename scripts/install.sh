@@ -21,6 +21,6 @@ echo "Adding execution bit..."
 chmod +x /usr/local/bin/helm-deployer
 
 echo ""
-echo "Helm Deployer has successfully been installed on you system."
+echo "Helm Deployer has successfully been installed on your system."
 echo "Usage: helm-deployer -f <inputfile.yaml> -k <kubeconfig> [-c <releaseName>] [-uninstall]"
 echo "For more information visit: https://github.com/MyPixyService/helm-deployer"

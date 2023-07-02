@@ -8,7 +8,6 @@ if [ "$EUID" -ne 0 ]; then
     exit $?
 fi
 
-# Your script commands go here
 echo "Running with root privileges..."
 
 echo "Downloading latest binary..."
@@ -20,7 +19,6 @@ mv helm-deployer /usr/local/bin/
 echo "Adding execution bit..."
 chmod +x /usr/local/bin/helm-deployer
 
-echo ""
-echo "Helm Deployer has successfully been installed on your system."
+echo -e "\nHelm Deployer has successfully been installed on your system."
 echo "Usage: helm-deployer -f <inputfile.yaml> -k <kubeconfig> [-c <releaseName>] [-uninstall]"
 echo "For more information visit: https://github.com/MyPixyService/helm-deployer"

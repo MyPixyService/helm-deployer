@@ -2,6 +2,7 @@
   chart: traefik
   repoURL: https://traefik.github.io/charts
   namespace: kube-system
+  valuesFile: ./values.yaml
   values:
     service:
       annotations:
